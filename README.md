@@ -6,7 +6,7 @@
 
 - Mingqi Wang (`mingqiw2`)
 - Sihan Cheng (`sihanc6`)
-- Kelly Dai (`sihanc6`)
+- Kelly Dai (`jingyud2`)
 - Teresa Zhang (`lingyiz4`)
 
 ## Algorithms: BFS, Astar, Dijkstra's
