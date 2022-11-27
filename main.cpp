@@ -29,15 +29,15 @@
 // }
 
 int main(int argc, char *argv[]) {
-    Reader reader;
+    readfile reader;
     // std::vector<std::string> arguements;
     // //note doesn't put in first command
     // //ex. ./air -bfs JFK = {-bfs, JFK} and not {./air, -bfs, JFK}
     // for (int f = 1; f < argc; ++f) {
     //     arguements.push_back(argv[f]);
     // }
-    std::vector<Airport> airports = reader.getAirportsFromFile("Data/airports.dat");
-    std::vector<Route> routes = reader.getRoutesFromFile("Data/routes.dat");
+    std::vector<Airport> airports = reader.getAirportsFromFile("airports.dat.txt");
+    std::vector<Route> routes = reader.getRoutesFromFile("routes.dat.txt");
     // std::unordered_map<std::string,Airport> airports_by_code;
 
     // // Initialize a weighted and directed graph
