@@ -9,7 +9,7 @@
 - Kelly Dai (`jingyud2`)
 - Teresa Zhang (`lingyiz4`)
 
-## Algorithms: BFS, PageRank, Dijkstra's, Landmark Path
+## Algorithms: BFS, PageRank, Dijkstra's
 
 ## Data
 
