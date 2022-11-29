@@ -7,7 +7,7 @@
 #include "PageRank.h"
 #include "airport_graph.h"
 //#include "Djikstras.h"
-#include "bfs.h"
+//#include "bfs.h"
 //#include "Landmark.h"
 
 using namespace std;
