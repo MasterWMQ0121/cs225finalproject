@@ -70,98 +70,98 @@ int main() {
 
         switch (mode)
         {
-            case 0:{
-                validSource = false;
-                while(validSource == false){
-                    cout << "Enter a source airport ID:" << endl;
-                    int sourceAP; 
-                    cin >> sourceAP;
-                    auto it = verticesInGraph.find(sourceAP);
-                    if(it != verticesInGraph.end()){
-                        validSource = true;
-                        BFS myBFS(airportFile, routesFile);
-                        vector<string> result_all = myBFS.BFS_all(sourceAP);
-                        string sourceAPName = it->second.getName();
-                        cout << "Printing out traversal from " << sourceAPName << ": " << endl;
-                        for(unsigned i = 0; i < result_all.size(); i++){
-                            cout << result_all[i] << " --> ";
-                            if(i%4 == 0 && i != 0)
-                                cout << "" << endl;
-                        }
-                        break;
-                    }else{
-                        cout << "Source airport ID not found in graph." << endl;
-                    }
-                }
-                break;
-            }
+//             case 0:{
+//                 validSource = false;
+//                 while(validSource == false){
+//                     cout << "Enter a source airport ID:" << endl;
+//                     int sourceAP; 
+//                     cin >> sourceAP;
+//                     auto it = verticesInGraph.find(sourceAP);
+//                     if(it != verticesInGraph.end()){
+//                         validSource = true;
+//                         BFS myBFS(airportFile, routesFile);
+//                         vector<string> result_all = myBFS.BFS_all(sourceAP);
+//                         string sourceAPName = it->second.getName();
+//                         cout << "Printing out traversal from " << sourceAPName << ": " << endl;
+//                         for(unsigned i = 0; i < result_all.size(); i++){
+//                             cout << result_all[i] << " --> ";
+//                             if(i%4 == 0 && i != 0)
+//                                 cout << "" << endl;
+//                         }
+//                         break;
+//                     }else{
+//                         cout << "Source airport ID not found in graph." << endl;
+//                     }
+//                 }
+//                 break;
+//             }
 
 
-            case 1:{
-                validSource = false;
-                while(validSource == false){
-                    cout << "Enter a source airport ID:" << endl;
-                    int sourceAP; 
-                    cin >> sourceAP;
-                    auto it = verticesInGraph.find(sourceAP);
-                    if(it != verticesInGraph.end()){
-                        validSource = true;
-                        cout << "Enter moves to traverse:" << endl;
-                        int moves;
-                        cin >> moves;
-                        BFS myBFS(airportFile, routesFile);
-                        vector<string> result_moves = myBFS.BFS_moves(sourceAP, moves);
-                        string sourceAPName = it->second.getName();
-                        cout << "Printing out first " << moves << " moves from " << sourceAPName << ": " << endl;
-                        for(unsigned i = 0; i < result_moves.size(); i++){
-                            cout << result_moves[i];
-                            if(i != result_moves.size()-1)
-                                cout << " --> ";
-                            if(i%4 == 0 && i != 0)
-                                cout << "" <<endl;
-                        }
-                        break;
-                    }else{
-                        cout << "Source airport ID not found in graph." << endl;
-                    }
-                }
-                break;
-            }
+//             case 1:{
+//                 validSource = false;
+//                 while(validSource == false){
+//                     cout << "Enter a source airport ID:" << endl;
+//                     int sourceAP; 
+//                     cin >> sourceAP;
+//                     auto it = verticesInGraph.find(sourceAP);
+//                     if(it != verticesInGraph.end()){
+//                         validSource = true;
+//                         cout << "Enter moves to traverse:" << endl;
+//                         int moves;
+//                         cin >> moves;
+//                         BFS myBFS(airportFile, routesFile);
+//                         vector<string> result_moves = myBFS.BFS_moves(sourceAP, moves);
+//                         string sourceAPName = it->second.getName();
+//                         cout << "Printing out first " << moves << " moves from " << sourceAPName << ": " << endl;
+//                         for(unsigned i = 0; i < result_moves.size(); i++){
+//                             cout << result_moves[i];
+//                             if(i != result_moves.size()-1)
+//                                 cout << " --> ";
+//                             if(i%4 == 0 && i != 0)
+//                                 cout << "" <<endl;
+//                         }
+//                         break;
+//                     }else{
+//                         cout << "Source airport ID not found in graph." << endl;
+//                     }
+//                 }
+//                 break;
+//             }
 
 
-            case 2:{
-                bool validAP = false;
-                while(validAP == false){
-                    cout << "Enter a source airport ID:" << endl;
-                    int sourceAP; 
-                    cin >> sourceAP;
-                    auto it = verticesInGraph.find(sourceAP);
-                    if(it != verticesInGraph.end()){
-                        string sourceAPName = it->second.getName();
-                        cout << "Enter a destination airport ID:" << endl;
-                        int destAP; 
-                        cin >> destAP;
-                        auto it2 = verticesInGraph.find(destAP);
-                        if(it2 != verticesInGraph.end()){
-                            validAP = true;
-                            BFS myBFS(airportFile, routesFile);
-                            vector<string> result_dest = myBFS.BFS_dest(sourceAP, destAP);
-                            string destAPName = it2->second.getName();
-                            cout << "Printing out traversal from " << sourceAPName << " to " << destAPName<< ": " << endl;
-                            for(unsigned i = 0; i < result_dest.size(); i++){
-                                cout << result_dest[i];
-                                if(i != result_dest.size()-1)
-                                    cout<< " --> ";
-                                if(i%4 == 0 && i != 0)
-                                    cout << "" << endl;
-                            }
-                        }
-                    }else{
-                        cout << "Invalid airport input" << endl;
-                    }
-                } 
-                break;
-            }
+//             case 2:{
+//                 bool validAP = false;
+//                 while(validAP == false){
+//                     cout << "Enter a source airport ID:" << endl;
+//                     int sourceAP; 
+//                     cin >> sourceAP;
+//                     auto it = verticesInGraph.find(sourceAP);
+//                     if(it != verticesInGraph.end()){
+//                         string sourceAPName = it->second.getName();
+//                         cout << "Enter a destination airport ID:" << endl;
+//                         int destAP; 
+//                         cin >> destAP;
+//                         auto it2 = verticesInGraph.find(destAP);
+//                         if(it2 != verticesInGraph.end()){
+//                             validAP = true;
+//                             BFS myBFS(airportFile, routesFile);
+//                             vector<string> result_dest = myBFS.BFS_dest(sourceAP, destAP);
+//                             string destAPName = it2->second.getName();
+//                             cout << "Printing out traversal from " << sourceAPName << " to " << destAPName<< ": " << endl;
+//                             for(unsigned i = 0; i < result_dest.size(); i++){
+//                                 cout << result_dest[i];
+//                                 if(i != result_dest.size()-1)
+//                                     cout<< " --> ";
+//                                 if(i%4 == 0 && i != 0)
+//                                     cout << "" << endl;
+//                             }
+//                         }
+//                     }else{
+//                         cout << "Invalid airport input" << endl;
+//                     }
+//                 } 
+//                 break;
+//             }
 
 
             // case 3:{
