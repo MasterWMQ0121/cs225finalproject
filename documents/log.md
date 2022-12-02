@@ -58,3 +58,23 @@ We did not check our work very detailedly earlier so some may contain unexpected
 We will plan for next week's tasks after the regrade for the Project Proposal is completed.
 
 #### Optional: Questions for mentor
+
+
+## Week 4 (Date: 11/20/2022 -- 12/02/2022)
+
+#### Weekly Goals
+This week, we aimd to finish the pagerank algorithm and prepared for the mid project checkins. We also decided to start to work on BFS if possible.
+
+#### Specific Tasks Completed (and by who)
+Sihan Cheng (sihanc6): Fixed bugs, improved PageRank.cpp and airportGraph.cpp, and completed Development Log 4.
+Mingqi Wang (mingqiw2): Finished most of the coding work for PageRank.cpp, and uploaded updates to GitHub.
+Kelly Dai (jingyud2): Finished the construction of the airport class, and provided insights regarding the algorithms.
+Teresa Zhang (lingyiz4): Finished most of the coding work for airportGraph.cpp, and explained the algorithms to our mentor in the zoom mid project checkins.
+
+#### Problems Encountered 
+Nothing so far.
+
+#### Plans for next week
+We want to construct BFS next week. We will start by writing pseudocode for the functions.
+
+#### Optional: Questions for mentor
