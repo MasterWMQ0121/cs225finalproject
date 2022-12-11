@@ -32,8 +32,50 @@ We are using the [OpenFlights](https://openflights.org/data.html) data and focus
 ## Running Instructions
 
 ### Building the application 
+Users can firstly download the zip file on their destop and type in the following command in the terminal to build the program.
+
+```
+make
+./main
+```
+
 ### Running the application
+Our main function consists of 5 cases where the user can interact with the various parts of our project.  
+The user can see the results of running a BFS traversal, Pagerank algorithm, and Djikstra's algorithm.
+
+Then user will enter the following interface and choose to use the default datasets or use their own datasets:
+```
+CS225 Final Project: OpenFlights
+Team member: mingqiw2, jingyud2, lingyiz4, sihanc6
+Enter "default" to construct graph using datasets from OpenFlights.org 
+or enter name of airports dataset
+```
+
+After making the choice, the user will choose which operation to run and enter the corresponding number:
+```
+Enter a number to select an operation:
+(0) Using BFS, traverse all of the graph from a given airport 
+(1) Using BFS, traverse a given number of moves of the graph from a given airport
+(2) Using BFS, traverse the graph until reaching the destination airport from a given airport
+(3) Calculate the shortest path between two airports
+(4) PageRank
+```
+
+Then users can follow the instruction to provide custom input and retrieve the output in the terminal.
+To end the program at at time, use `Ctrl+C`.
 
 ### Testing the application
 
+Use the following code to run the test:
+```
+make test
+./test
+```  
+
+Our tests test the functionality of
+- construct an airport 
+- construct a graph
+- the BFS traversal
+- the Pagerank algorithm
+- Djikstra's algorithm
 
