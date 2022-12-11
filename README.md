@@ -9,9 +9,9 @@
 
 ## Deliverables 
 
-* [Report](https://github-dev.cs.illinois.edu/cs225-sp21/rmday2-yuen9-zihengc2-haoyu9/blob/master/CS%20225%20Final%20Project%20Report.pdf)
+* [Report]()
 * [Presentation Video](https://www.youtube.com/watch?v=3nA9krTnOLI)
-* [Presentation Slides](https://github-dev.cs.illinois.edu/cs225-sp21/rmday2-yuen9-zihengc2-haoyu9/blob/master/CS%20225%20Final%20Project%20Presentation.pdf)
+* [Presentation Slides](https://github.com/MasterWMQ0121/cs225finalproject/blob/main/documents/cs225_final_presentation.pdf)
 
 ## Algorithms: BFS, PageRank, Dijkstra's
 
@@ -24,14 +24,14 @@ We are using the [OpenFlights](https://openflights.org/data.html) data and focus
 
 ## Repo Structure
 
-
+- All code files are located in the code folder
+- All test cases are located in the tests folder
+- All data sets are located in the data folder
+- All presentation file, video, and report are located in the main page.
 
 ## Running Instructions
 
-
-
-### Building the application
-
+### Building the application 
 ### Running the application
 
 ### Testing the application
