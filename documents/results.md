@@ -2,6 +2,7 @@
 title: "CS225 Final Report: OpenFlights"
 author: "Mingqi Wang, Kelly Dai, Teresa Zhang, Sihan Cheng"
 date: "12/11/2022"
+output: pdf_document
 ---
 
 In this project, we explore the OpenFlights dataset to understand how people in the world can be efficiently connected by airlines. Using the algorithms described below, a real-life application could generate a planned route to find the shortest path from one place to another place, visiting all the famous places in the world, etc. We plan to find the shortest flight path between the two locations, by using the nearest airports corresponding to each country. 
