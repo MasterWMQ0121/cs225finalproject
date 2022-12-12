@@ -9,7 +9,7 @@
 
 ## Deliverables 
 
-* [Report]()
+* [Report](https://github.com/MasterWMQ0121/cs225finalproject/blob/main/documents/CS225-Final-Report.pdf)
 * [Presentation Video](https://www.youtube.com/watch?v=3nA9krTnOLI)
 * [Presentation Slides](https://github.com/MasterWMQ0121/cs225finalproject/blob/main/documents/cs225_final_presentation.pdf)
 
